@@ -10,7 +10,7 @@ import { cardHover, fadeInDown } from '@/app/utils/animations'
 const Projects = () => {
     return (
         <section className='py-20 container max-w-7xl mx-auto px-4'>
-            <motion.div {...fadeInDown} transition={{delay:0.5}}className='grid grid-cols-1 md:grid-cols-3 gap-8'>
+            <motion.div {...fadeInDown} transition={{delay:1.0}}className='grid grid-cols-1 md:grid-cols-3 gap-8'>
                 {
                     projects.map((project) => (
                         <motion.div {...cardHover} transition={{delay:0.1}} className="bg-indigo-200 dark:bg-black/50 p-6 rounded-lg shadow-md">

@@ -4,7 +4,7 @@ import Image from 'next/image'
 import { FaGithub, FaInstagram, FaLinkedin } from 'react-icons/fa'
 import Link from 'next/link'
 import { motion } from 'framer-motion'
-import { fadeInUp, scaleIn, slideInLeft, slideInRight } from '@/app/utils/animations'
+import { fadeInUp,  scaleIn, slideInLeft, slideInRight } from '@/app/utils/animations'
 
 const Hero = () => {
     return (

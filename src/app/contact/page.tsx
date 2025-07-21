@@ -5,6 +5,8 @@ import React from "react";
 import { FaEnvelope, FaWhatsapp } from "react-icons/fa";
 import { FaLocationArrow } from "react-icons/fa6";
 import { useState } from "react";
+import { motion } from "framer-motion";
+import { fadeIn, fadeInDown, pageTransition, slideInLeft, slideInRight } from "../utils/animations";
 
 interface FormData {
   name: string;
@@ -59,13 +61,13 @@ const ContactPage = () => {
   }
 
   return (
-    <div className="container max-w-7xl mx-auto py-20">
-      <h1 className="text-4xl text-center font-bold mb-20">
+    <motion.div {...pageTransition} className="container max-w-7xl mx-auto py-20">
+      <motion.h1 {...fadeInDown} transition={{delay:0.5}} className="text-4xl text-center font-bold mb-20">
         Let's get in touch!
-      </h1>
+      </motion.h1>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
         {/* Contact Info */}
-        <div className="space-y-8">
+        <motion.div {...slideInRight} transition={{delay:0.8}} className="space-y-8">
           <h2 className="text-2-xl font-semibold mb-4">
             Get in Touch
           </h2>
@@ -103,10 +105,10 @@ const ContactPage = () => {
               </div>
             </div>
           </div>
-        </div>
+        </motion.div>
 
         {/* Contact Form */}
-        <div className="bg-indigo-200 dark:border-0 dark:bg-black/50 p-6 rounded-lg shadow-md">
+        <motion.div {...slideInLeft} transition={{delay:0.8}} className="bg-indigo-200 dark:border-0 dark:bg-black/50 p-6 rounded-lg shadow-md">
           <div className='bg-white dark:border-0 dark:bg-black/30 rounded-lg shadow-md p-10'>
             <form onSubmit={handleSubmit} className="space-y-6">
               <div>
@@ -147,11 +149,11 @@ const ContactPage = () => {
               }
             </form>
           </div>
-        </div>
+        </motion.div>
       </div>
 
 
-    </div>
+    </motion.div>
   )
 }
 

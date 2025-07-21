@@ -3,11 +3,11 @@ import Experience from "@/components/Experience";
 import Hero from "@/components/Hero";
 import Projects from "@/components/Projects";
 import { motion } from "framer-motion";
-import { fadeIn } from "./utils/animations";
+import { fadeIn, pageTransition } from "./utils/animations";
 
 export default function Home() {
   return (
-    <div>
+    <motion.div {...pageTransition}>
       <Hero />
       {/* <Experience/> */}
       <motion.h2 {...fadeIn} transition={{
@@ -17,6 +17,6 @@ export default function Home() {
         Featured Projects
       </motion.h2>
       <Projects />
-    </div>
+    </motion.div>
   );
 }
