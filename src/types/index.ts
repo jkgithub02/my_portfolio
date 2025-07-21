@@ -7,4 +7,8 @@ export interface Project {
     image: string;
 }
 
-export interface Experience{}
+export interface Experience{
+    position: string;
+    company: string;
+    description: string;
+}
