@@ -36,7 +36,7 @@ const ContactPage = () => {
     e.preventDefault();
     setStatus("loading");
     try {
-      const response= await fetch("/api/contact", {
+      const response= await fetch("https://formspree.io/f/mgvzojjn", {
         method: "POST",
         headers: {
           "Content-Type": "application/json"
