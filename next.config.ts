@@ -5,10 +5,10 @@ const nextConfig: NextConfig = {
   output: 'export',
   trailingSlash: true,
   images: {
-    unoptimized: true
+    unoptimized: false
   },
-  basePath: '/my_portfolio',
-  assetPrefix: '/my_portfolio/',
+  // basePath: '/my_portfolio',
+  // assetPrefix: '/my_portfolio/',
 };
 
 export default nextConfig;
