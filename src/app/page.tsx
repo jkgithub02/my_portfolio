@@ -7,6 +7,9 @@ export default function Home() {
     <div>
       <Hero />
       {/* <Experience/> */}
+      <h2 className="text-4xl font-bold mb-2 text-center">
+        Featured Projects
+      </h2>
       <Projects/>
     </div>
   );
