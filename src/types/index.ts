@@ -9,6 +9,9 @@ export interface Project {
 
 export interface Experience{
     position: string;
+    start: string,
+    end: string,
+    year: string,
     company: string;
-    description: string;
+    description: string[];
 }
