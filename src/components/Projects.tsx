@@ -1,16 +1,19 @@
+'use client'
 import { projects } from '@/content/projects'
 import Image from 'next/image'
 import React from 'react'
 import { FaExternalLinkAlt, FaGithub } from 'react-icons/fa'
 import Link from 'next/link'
+import { motion} from 'framer-motion'
+import { cardHover, fadeInDown } from '@/app/utils/animations'
 
 const Projects = () => {
     return (
         <section className='py-20 container max-w-7xl mx-auto px-4'>
-            <div className='grid grid-cols-1 md:grid-cols-3 gap-8'>
+            <motion.div {...fadeInDown} transition={{delay:0.5}}className='grid grid-cols-1 md:grid-cols-3 gap-8'>
                 {
                     projects.map((project) => (
-                        <div className="bg-indigo-200 dark:bg-black/50 p-6 rounded-lg shadow-md">
+                        <motion.div {...cardHover} transition={{delay:0.1}} className="bg-indigo-200 dark:bg-black/50 p-6 rounded-lg shadow-md">
                             <article key={project.title} className='bg-white dark:bg-black/30 rounded-lg shadow-md p-6'>
                                 <div className='relative aspect-video mb4 rounded-lg overflow-hidden'>
                                     <Image src={project.image} alt={project.title} fill
@@ -42,10 +45,10 @@ const Projects = () => {
                                     </Link>
                                 </div>
                             </article>
-                        </div>
+                        </motion.div>
                     ))
                 }
-            </div>
+            </motion.div>
         </section>
     )
 }
