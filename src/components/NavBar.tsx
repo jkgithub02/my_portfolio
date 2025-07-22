@@ -5,12 +5,12 @@ import React, { useState } from 'react'
 import { Bars3Icon, MoonIcon, SunIcon, XMarkIcon } from '@heroicons/react/24/outline';
 import { useTheme } from '@/app/context/ThemeContext';
 import { motion } from 'framer-motion';
-import { fadeInDown, slideInLeft, slideInRight } from '@/app/utils/animations';
+import { fadeInDown, slideInRight } from '@/app/utils/animations';
 
 const NavBar = () => {
 
     const { theme, toggleTheme } = useTheme();
-    const [isMobileMenu, setIsMobileMenuOpen] = useState<Boolean>(false);
+    const [isMobileMenu, setIsMobileMenuOpen] = useState<boolean>(false);
     const pathname = usePathname();
     const toggleMobileMenu = () => {
         setIsMobileMenuOpen(!isMobileMenu)

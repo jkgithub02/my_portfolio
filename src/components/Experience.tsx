@@ -2,7 +2,7 @@
 import React from 'react'
 import { experiences } from '@/content/experience'
 import {motion} from 'framer-motion'
-import { cardHover, cardHoverSmall, fadeInDown, fadeInUp } from '@/app/utils/animations'
+import { cardHoverSmall, fadeInDown, fadeInUp } from '@/app/utils/animations'
 
 const Experience = () => {
   return (
@@ -13,8 +13,8 @@ const Experience = () => {
         {/* TODO: Update Experience structure */}
         {
           experiences.map((exp) => (
-            <motion.div {...cardHoverSmall} transition={{delay:0.1}} className="bg-indigo-200 dark:border-0 dark:bg-black/50 p-6 rounded-lg shadow-md">
-              <article key={exp.position} className='bg-white dark:border-0 dark:bg-black/30 rounded-lg shadow-md p-10'>
+            <motion.div {...cardHoverSmall} transition={{delay:0.1}}  key={exp.position} className="bg-indigo-200 dark:border-0 dark:bg-black/50 p-6 rounded-lg shadow-md">
+              <article className='bg-white dark:border-0 dark:bg-black/30 rounded-lg shadow-md p-10'>
                 <h2 className='text-xl font-extrabold mb-2'>
                   {exp.position} <span className='text-sm font-semibold'>| {exp.start} - {exp.end} {exp.year}</span>
                 </h2>

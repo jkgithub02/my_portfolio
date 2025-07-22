@@ -13,8 +13,8 @@ const Projects = () => {
             <motion.div {...fadeInDown} transition={{delay:1.0}}className='grid grid-cols-1 md:grid-cols-3 gap-8'>
                 {
                     projects.map((project) => (
-                        <motion.div {...cardHover} transition={{delay:0.1}} className="bg-indigo-200 dark:bg-black/50 p-6 rounded-lg shadow-md">
-                            <article key={project.title} className='bg-white dark:bg-black/30 rounded-lg shadow-md p-6'>
+                        <motion.div {...cardHover} transition={{delay:0.1}} key={project.title} className="bg-indigo-200 dark:bg-black/50 p-6 rounded-lg shadow-md">
+                            <article className='bg-white dark:bg-black/30 rounded-lg shadow-md p-6'>
                                 <div className='relative aspect-video mb4 rounded-lg overflow-hidden'>
                                     <Image src={project.image} alt={project.title} fill
                                         className='object-cover' sizes='(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw'></Image>
@@ -28,8 +28,8 @@ const Projects = () => {
                                 </p>
 
                                 <div className='flex flex-wrap gap-2 mb-4'>
-                                    {project.technologies.map((tech) => (
-                                        <span className='px-3 py-1 bg-primary/10 text-primary rounded-full text-sm'>{tech}</span>
+                                    {project.technologies.map((tech, index) => (
+                                        <span key={index} className='px-3 py-1 bg-primary/10 text-primary rounded-full text-sm'>{tech}</span>
                                     ))}
                                 </div>
 

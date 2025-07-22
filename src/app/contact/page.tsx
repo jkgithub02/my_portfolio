@@ -6,7 +6,7 @@ import { FaEnvelope, FaWhatsapp } from "react-icons/fa";
 import { FaLocationArrow } from "react-icons/fa6";
 import { useState } from "react";
 import { motion } from "framer-motion";
-import { fadeIn, fadeInDown, pageTransition, slideInLeft, slideInRight } from "../utils/animations";
+import {fadeInDown, pageTransition, slideInLeft, slideInRight } from "../utils/animations";
 
 interface FormData {
   name: string;
@@ -63,7 +63,7 @@ const ContactPage = () => {
   return (
     <motion.div {...pageTransition} className="container max-w-7xl mx-auto py-20">
       <motion.h1 {...fadeInDown} transition={{delay:0.5}} className="text-4xl text-center font-bold mb-20">
-        Let's get in touch!
+        Let&apos;s get in touch!
       </motion.h1>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
         {/* Contact Info */}
@@ -71,7 +71,7 @@ const ContactPage = () => {
           <h2 className="text-2-xl font-semibold mb-4">
             Get in Touch
           </h2>
-          <p className="text-secondary md:w-2/3">I'm open to discussing creative ideas,
+          <p className="text-secondary md:w-2/3">I&apos;m open to discussing creative ideas,
             or opportunities to contribute to your goals!</p>
           <div className="space-y-4">
             <div className="flex items-center gap-4">

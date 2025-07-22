@@ -1,5 +1,5 @@
 'use client'
-import Experience from "@/components/Experience";
+// import Experience from "@/components/Experience";
 import Hero from "@/components/Hero";
 import Projects from "@/components/Projects";
 import { motion } from "framer-motion";
