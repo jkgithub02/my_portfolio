@@ -1,4 +1,5 @@
 import { Project } from "@/types";
+import { getImagePath } from "../../next.config";
 
 export const projects: Project[] = [
   {
@@ -7,7 +8,7 @@ export const projects: Project[] = [
     technologies: ['Next.js', 'TypeScript', 'Tailwind CSS', 'Stripe'],
     githubLink: 'https://github.com',
     demoLink: 'https://demo.com',
-    image: '/projects/ic1.jpg',
+    image: getImagePath('/projects/ic1.jpg'),
   },
   {
     title: 'Task Management App',
@@ -15,7 +16,7 @@ export const projects: Project[] = [
     technologies: ['React', 'Node.js', 'MongoDB', 'Socket.io'],
     githubLink: 'https://github.com',
     demoLink: 'https://demo.com',
-    image: '/projects/ic2.jpg',
+    image: getImagePath('/projects/ic1.jpg'),
   },
   {
     title: 'Portfolio Website',
@@ -23,7 +24,7 @@ export const projects: Project[] = [
     technologies: ['Next.js', 'Tailwind CSS', 'Framer Motion'],
     githubLink: 'https://github.com',
     demoLink: 'https://demo.com',
-    image: '/projects/portfolio-website.jpg',
+    image: getImagePath('/projects/ic1.jpg'),
   },
   {
     title: 'Blog Platform',
@@ -31,7 +32,7 @@ export const projects: Project[] = [
     technologies: ['Gatsby', 'GraphQL', 'Contentful'],
     githubLink: 'https://github.com',
     demoLink: 'https://demo.com',
-    image: '/projects/blog-website.jpeg',
+    image: getImagePath('/projects/ic1.jpg'),
   },
   {
     title: 'Weather App',
@@ -39,7 +40,7 @@ export const projects: Project[] = [
     technologies: ['React', 'OpenWeatherMap API'],
     githubLink: 'https://github.com',
     demoLink: 'https://demo.com',
-    image: '/projects/weather-app.png',
+    image: getImagePath('/projects/ic1.jpg'),
   },
   {
     title: 'Chat Application',
@@ -47,7 +48,7 @@ export const projects: Project[] = [
     technologies: ['React', 'Node.js', 'Socket.io'],
     githubLink: 'https://github.com',
     demoLink: 'https://demo.com',
-    image: '/projects/chat-app.png',
+    image: getImagePath('/projects/ic1.jpg'),
   },
   {
     title: 'Recipe Finder',
@@ -55,7 +56,7 @@ export const projects: Project[] = [
     technologies: ['React', 'Edamam API'],
     githubLink: 'https://github.com',
     demoLink: 'https://demo.com',
-    image: '/projects/recipe-finder.png',
+    image: getImagePath('/projects/ic1.jpg'),
   },
   {
     title: 'Expense Tracker',
@@ -63,6 +64,6 @@ export const projects: Project[] = [
     technologies: ['React', 'Firebase'],
     githubLink: 'https://github.com',
     demoLink: 'https://demo.com',
-    image: '/projects/expense-tracker.webp',
+    image: getImagePath('/projects/ic1.jpg'),
   }
 ];

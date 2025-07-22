@@ -5,13 +5,14 @@ import { FaGithub, FaInstagram, FaLinkedin } from 'react-icons/fa'
 import Link from 'next/link'
 import { motion } from 'framer-motion'
 import { fadeInUp,  scaleIn, slideInLeft, slideInRight } from '@/app/utils/animations'
+import { getImagePath } from '../../next.config'
 
 const Hero = () => {
     return (
         <div className='py-28 container max-w-7xl mx-auto px-4'>
             <div className="max-w-3xl mx-auto text-center">
                 <motion.div {...scaleIn} transition={{delay:0.2}} className='flex flex-col items-center mb-4'>
-                    <Image src="/profile.JPG" alt='profile image' width= {100} height ={100}
+                    <Image src={getImagePath('/profile.JPG')} alt='profile image' width= {100} height ={100}
                     className= 'rounded-full mb-4 w-40 h-40 object-cover ring-2 ring-primary'/>
                 </motion.div>
 
