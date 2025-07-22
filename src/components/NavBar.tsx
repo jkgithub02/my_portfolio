@@ -1,7 +1,7 @@
 'use client'
 import Link from 'next/link'
 import { usePathname } from 'next/navigation';
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import { Bars3Icon, MoonIcon, SunIcon, XMarkIcon } from '@heroicons/react/24/outline';
 import { useTheme } from '@/app/context/ThemeContext';
 import { motion } from 'framer-motion';
@@ -16,6 +16,47 @@ const NavBar = () => {
         setIsMobileMenuOpen(!isMobileMenu)
     }
 
+    const [currentWordIndex, setCurrentWordIndex] = useState(0);
+    const [currentText, setCurrentText] = useState('');
+    const [isDeleting, setIsDeleting] = useState(false);
+    
+    const words = [
+        'Welcome',      // English
+        '欢迎',         // Chinese
+        'Selamat Datang', // Malay/Indonesian
+        'Bienvenido',   // Spanish
+        '환영합니다',    // Korean
+         'ようこそ',      // Japanese
+        'Bienvenue',    // French
+        'Willkommen',   // German
+    ];
+
+    useEffect(() => {
+        const currentWord = words[currentWordIndex];
+        const timeout = setTimeout(() => {
+            if (!isDeleting) {
+                // typing...
+                if (currentText.length < currentWord.length) {
+                    setCurrentText(currentWord.slice(0, currentText.length + 1));
+                } else {
+                    // finished typing, wait then start deleting
+                    setTimeout(() => setIsDeleting(true), 1500);
+                }
+            } else {
+                // deleting..
+                if (currentText.length > 0) {
+                    setCurrentText(currentText.slice(0, -1));
+                } else {
+                    // finished deleting, move to next word
+                    setIsDeleting(false);
+                    setCurrentWordIndex((prev) => (prev + 1) % words.length);
+                }
+            }
+        }, isDeleting ? 50 : 100); //deletes at a faster speed
+
+        return () => clearTimeout(timeout);
+    }, [currentText, isDeleting, currentWordIndex, words]);
+
     const menuItems = [
         { href: "/", label: "Home" },
         { href: "/about", label: "About" },
@@ -28,7 +69,10 @@ const NavBar = () => {
             <div className="container max-w-7xl mx-auto px-4">
                 {/* Desktop Menu */}
                 <motion.div {...fadeInDown} transition={{ delay: 0.3 }} className='flex items-center justify-between h-16'>
-                    <Link href='/' className='text-xl font-bold text-primary'>Welcome</Link>
+                    <Link href='/' className='text-2xl font-extrabold text-primary'>
+                        {currentText}
+                        <span className="animate-pulse">|</span>
+                    </Link>
                     {/* options */}
                     <div className='hidden md:flex items-center space-x-8'>
                         {
