@@ -33,7 +33,7 @@ const Projects = () => {
                                     ))}
                                 </div>
 
-                                <div className='flex gap-4 mt-4 pt-2'>
+                                {/* <div className='flex gap-4 mt-4 pt-2'>
                                     <Link href={project.githubLink} target='_blank' className='flex items-center gap-2 text-secondary hover:text-primary transition-colors'>
                                         <FaGithub className='w-5 h-5' /><span>Code</span>
                                     </Link>
@@ -43,7 +43,7 @@ const Projects = () => {
                                     <Link href={project.githubLink} target='_blank' className='flex items-center gap-2 text-secondary hover:text-primary transition-colors'>
                                         <FaExternalLinkAlt className='w-5 h-5' /><span>Live Demo</span>
                                     </Link>
-                                </div>
+                                </div> */}
                             </article>
                         </motion.div>
                     ))
