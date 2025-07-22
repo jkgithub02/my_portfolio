@@ -1,5 +1,5 @@
 import { Project } from "@/types";
-import { getImagePath } from "../../next.config";
+import { getImagePath } from "@/app/utils/imagePath";
 
 export const projects: Project[] = [
   {
@@ -16,7 +16,7 @@ export const projects: Project[] = [
     technologies: ['React', 'Node.js', 'MongoDB', 'Socket.io'],
     githubLink: 'https://github.com',
     demoLink: 'https://demo.com',
-    image: getImagePath('/projects/ic1.jpg'),
+    image: getImagePath('/projects/ic2.jpg'),
   },
   {
     title: 'Portfolio Website',
@@ -24,7 +24,7 @@ export const projects: Project[] = [
     technologies: ['Next.js', 'Tailwind CSS', 'Framer Motion'],
     githubLink: 'https://github.com',
     demoLink: 'https://demo.com',
-    image: getImagePath('/projects/ic1.jpg'),
+    image: getImagePath('/projects/ic3.jpg'),
   },
   {
     title: 'Blog Platform',

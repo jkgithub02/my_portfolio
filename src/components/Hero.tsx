@@ -5,7 +5,8 @@ import { FaGithub, FaInstagram, FaLinkedin } from 'react-icons/fa'
 import Link from 'next/link'
 import { motion } from 'framer-motion'
 import { fadeInUp,  scaleIn, slideInLeft, slideInRight } from '@/app/utils/animations'
-import { getImagePath } from '../../next.config'
+import { getImagePath } from '@/app/utils/imagePath'
+
 
 const Hero = () => {
     return (
