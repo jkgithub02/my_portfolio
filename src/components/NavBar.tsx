@@ -71,7 +71,7 @@ const NavBar = () => {
                 <motion.div {...fadeInDown} transition={{ delay: 0.3 }} className='flex items-center justify-between h-16'>
                     <Link href='/' className='text-2xl font-extrabold text-primary'>
                         {currentText}
-                        <span className="animate-pulse">|</span>
+                        <span className="animate-pulse text-black dark:text-white" >|</span>
                     </Link>
                     {/* options */}
                     <div className='hidden md:flex items-center space-x-8'>
