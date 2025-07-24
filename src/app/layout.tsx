@@ -19,7 +19,7 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "| Jason Kong | Portfolio",
   description: "My portfolio",
- icons: {
+  icons: {
     icon: getImagePath('/favicon.ico'),
     shortcut: getImagePath('/favicon-16x16.png'),
     apple: getImagePath('/apple-touch-icon.png'),
@@ -33,9 +33,26 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body
+      {/* <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased bg-gradient-to-t from-blue-20 to-indigo-200 transition-colors dark:bg-gradient-to-t dark:from-slate-600 dark:to-stone-900 dark:text-white`}
-        >
+      ></body> */}
+      <body
+        className={`${geistSans.variable} ${geistMono.variable} antialiased dark:text-white`}
+      >
+        <div className="area">
+          <ul className="circles">
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+          </ul>
+        </div>
         <ThemeProvider>
           <NavBar />
           <main className="pt-16 min-h-screen">
