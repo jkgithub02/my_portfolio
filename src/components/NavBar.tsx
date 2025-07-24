@@ -65,7 +65,7 @@ const NavBar = () => {
         { href: "/contact", label: "Contact" },
     ]
     return (
-        <nav className="fixed w-full bg-white/80 dark:bg-dark/80 backdrop-blur-sm z-50 border-b border-gray-200 dark:border-gray-700">
+        <nav className="fixed w-full bg-white/50 dark:bg-dark/80 backdrop-blur-sm z-50 border-b border-gray-200 dark:border-gray-700">
             <div className="container max-w-7xl mx-auto px-4">
                 {/* Desktop Menu */}
                 <motion.div {...fadeInDown} transition={{ delay: 0.3 }} className='flex items-center justify-between h-16'>
