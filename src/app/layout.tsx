@@ -4,6 +4,7 @@ import "./globals.css";
 import NavBar from "@/components/NavBar";
 import { ThemeProvider } from "./context/ThemeContext";
 import Footer from "@/components/Footer";
+import { getImagePath } from "./utils/imagePath";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -16,12 +17,12 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Jason Kong",
+  title: "Jason Kong | Portfolio",
   description: "My portfolio",
  icons: {
-    icon: '/favicon.ico',
-    shortcut: '/favicon-16x16.png',
-    apple: '/apple-touch-icon.png',
+    icon: getImagePath('/favicon.ico'),
+    shortcut: getImagePath('/favicon-16x16.png'),
+    apple: getImagePath('/apple-touch-icon.png'),
   },
 };
 
