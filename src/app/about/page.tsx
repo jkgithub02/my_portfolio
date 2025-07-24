@@ -24,7 +24,7 @@ const AboutPage = () => {
   ]
   return (
     <motion.div {...pageTransition} className='container max-w-7xl mx-auto py-12'>
-      <motion.h1 {...fadeInDown} transition={{ delay: 0.5 }} className='text-4xl font-bold text-center'>About Me</motion.h1>
+      <motion.h1 {...fadeInDown} transition={{ delay: 0.5 }} className='text-4xl font-bold text-center mb-4'>About Me</motion.h1>
 
       {/* Bio Section */}
       <section className='mb-10'>

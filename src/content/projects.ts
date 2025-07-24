@@ -4,7 +4,7 @@ import { getImagePath } from "@/app/utils/imagePath";
 export const projects: Project[] = [
   {
     title: 'VizLab',
-    description: 'A data-visualization platform powered by AI, with inspiration drawn from Microsoft\'s Lida. (Under Development)',
+    description: 'A data-visualization platform powered by AI, with inspiration drawn from Microsoft\'s Lida. (Still under development)',
     technologies: ['React.js', 'Tailwind CSS', 'FastAPI', 'llama.cpp', 'Uvicorn'],
     githubLink: 'https://github.com',
     demoLink: 'https://demo.com',
@@ -52,7 +52,7 @@ export const projects: Project[] = [
   },
   {
     title: 'Eat With JJ',
-    description: 'An online restaurant food-ordering system with dynamic menu management, order management, customer and admin dashboards',
+    description: 'An online restaurant food-ordering system with dynamic menu management, order management, customer and admin dashboards.',
     technologies: ['HTML', 'CSS', 'Javascript', 'PHP', 'XAMPP', 'MySQL'],
     githubLink: 'https://github.com',
     demoLink: 'https://demo.com',
@@ -61,7 +61,7 @@ export const projects: Project[] = [
 
   {
     title: 'Library Management System',
-    description: 'My initial project, a library management system built in C while strengthening my understaning in programming fundamentals.',
+    description: 'My initial project, a library management system built in C while strengthening my understanding in programming fundamentals.',
     technologies: ['C'],
     githubLink: 'https://github.com',
     demoLink: 'https://demo.com',
