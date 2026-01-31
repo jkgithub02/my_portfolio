@@ -4,11 +4,27 @@ import { getImagePath } from "@/app/utils/imagePath";
 export const projects: Project[] = [
   {
     title: 'VizLab',
-    description: 'A data-visualization platform powered by AI, with inspiration drawn from Microsoft\'s Lida. (Still under development)',
+    description: 'A data-analysis and AutoML web application that leverages LLMs',
     technologies: ['React.js', 'Tailwind CSS', 'FastAPI', 'llama.cpp', 'Uvicorn'],
     githubLink: 'https://github.com',
     demoLink: 'https://demo.com',
     image: getImagePath('/projects/vizlab.jpg'),
+  },
+  {
+    title: 'MCP Studio',
+    description: 'A web application that allows LLMs to perform tasks such as cloud metrics monitoring, documentation through word with various MCP servers.',
+    technologies: ['Next.js', 'Tailwind CSS', 'FastAPI', 'Uvicorn', 'Langchain', 'OpenAI API', 'FastMCP'],
+    githubLink: 'https://github.com',
+    demoLink: 'https://demo.com',
+    image: getImagePath('/projects/mcp.jpeg'),
+  },
+    {
+    title: 'RAG-Powered Document Analyzer',
+    description: 'A web application that utilizes Retrieval-Augmented Generation (RAG) to analyze and extract insights from user-uploaded documents.',
+    technologies: ['Next.js', 'Tailwind CSS', 'FastAPI', 'Uvicorn', 'Langchain', 'OpenAI API', 'ChromaDB', 'FAISS'],
+    githubLink: 'https://github.com',
+    demoLink: 'https://demo.com',
+    image: getImagePath('/projects/rag.jpeg'),
   },
   {
     title: 'Insight Canvas',

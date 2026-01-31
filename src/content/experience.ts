@@ -3,12 +3,16 @@ import { Experience } from "@/types";
 export const experiences: Experience[] = [
     {
         position: "Technical Account Manager (Intern)",
-        start: "July 2025",
-        end: "Present",
-        year: "",
+        start: "July",
+        end: "September",
+        year: "2025",
         company: "Alibaba Cloud",
         description: [
-            "[Job responsibilities still under progress]"
+            "Conducted competitive analysis of major AI platforms (Alibaba Cloud, Azure, AWS, Google Cloud), identifying key differentiators that informed internal product positioning.",
+            "Gained in-depth practical experience in cloud infrastructure management, covering compute, networking, security, automation, and containerization workflows.",
+            "Supported real customers by resolving technical inquiries and providing clear, effective solutions.",
+            "Built and deployed two production-ready AI applications: a RAG-based web app and a custom MCP-integrated system for real-time cloud metrics, enhancing operational efficiency and AI observability.",
+            "Achieved four Alibaba Cloud professional certifications, validating technical expertise across cloud architecture and generative AI technologies"
         ],
     },
     {
