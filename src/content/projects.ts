@@ -4,8 +4,8 @@ import { getImagePath } from "@/app/utils/imagePath";
 export const projects: Project[] = [
   {
     title: 'VizLab',
-    description: 'A data-analysis and AutoML web application that leverages LLMs',
-    technologies: ['React.js', 'Tailwind CSS', 'FastAPI', 'llama.cpp', 'Uvicorn'],
+    description: 'My last and final year project in my undergraduate studies: A data-intelligence platform that provides AI-assisted exploratory data analysis, visualization capabilities and predictive modelling within a few clicks.',
+    technologies: ['React.js', 'Tailwind CSS', 'FastAPI', 'llama.cpp', 'Uvicorn', 'ollama', 'Docker', 'AWS Bedrock'],
     githubLink: 'https://github.com',
     demoLink: 'https://demo.com',
     image: getImagePath('/projects/vizlab.jpg'),
@@ -21,7 +21,7 @@ export const projects: Project[] = [
     {
     title: 'RAG-Powered Document Analyzer',
     description: 'A web application that utilizes Retrieval-Augmented Generation (RAG) to analyze and extract insights from user-uploaded documents.',
-    technologies: ['Next.js', 'Tailwind CSS', 'FastAPI', 'Uvicorn', 'Langchain', 'OpenAI API', 'ChromaDB', 'FAISS'],
+    technologies: ['React.js', 'Tailwind CSS', 'FastAPI', 'Uvicorn', 'Langchain', 'OpenAI API', 'ChromaDB', 'FAISS', 'ollama', 'Docker', 'Hugging Face'],
     githubLink: 'https://github.com',
     demoLink: 'https://demo.com',
     image: getImagePath('/projects/rag.jpeg'),

@@ -21,6 +21,9 @@ const AboutPage = () => {
     { name: 'FastAPI', color: 'bg-green-600', textColor: 'text-white' },
     { name: 'SQL', color: 'bg-blue-900', textColor: 'text-white' },
     { name: 'Lean', color: 'bg-gray-700', textColor: 'text-white' },
+    { name: 'Docker', color: 'bg-blue-300', textColor: 'text-white' },
+    { name: 'Alibaba Cloud', color: 'bg-orange-800', textColor: 'text-white' },
+    { name: 'AWS', color: 'bg-orange-600', textColor: 'text-white' }
   ]
   return (
     <motion.div {...pageTransition} className='container max-w-7xl mx-auto py-12'>
